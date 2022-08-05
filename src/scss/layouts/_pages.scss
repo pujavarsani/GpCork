@@ -1,0 +1,85 @@
+// Home page
+
+// first slider section
+.home-first-slider{
+    padding: 20px 0;
+    .slider-img{
+        @include media-breakpoint-up(md) {
+            max-height: 614px;
+        }
+    }
+}
+
+// video section
+.video-image-section{
+    .video-image{
+        height: 697px;
+        @include media-breakpoint-down(md){
+            height: 488px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+        }
+    }
+    span{
+        font-size: 13px;
+        letter-spacing: 1.3px;
+    }
+}
+
+// about us
+.home-about{
+    padding-top: 132px;
+    padding-bottom: 180px;
+    @include media-breakpoint-down(md){
+        padding-top: 100px;
+        padding-bottom: 115px;
+    }
+    p, h3{
+        line-height: 1.90;
+    }
+    .img-rounded{
+        height: 30px;
+        width: 30px;
+        background-color:rgb(255 255 255 / 18%);
+    }
+    .about-content{
+        font-size: 17px;
+    }
+}
+
+// latest project
+.latest-card-section{
+    padding-top: 130px;
+    padding-bottom: 200px;
+    @include media-breakpoint-down(md){
+        padding-top: 72px;
+        padding-bottom: 116px;
+    }
+}
+
+
+.insights{
+    padding-top: 200px;
+    @include media-breakpoint-down(md){
+        padding-top: 152px;
+    }
+    background-image: linear-gradient($gray 50%, $primary 50%);
+    .insights_slider{
+        // // margin: 0 -8px;
+        // .slick-slide{
+        //     padding: 8px;
+        // }
+        .insight-img{
+            height: 382px;
+            .card-tag{
+                min-width: 85px ;
+            }
+        }
+        .insight-content{
+            margin-top: 21px;
+            p{
+                font-size: 25px;
+                max-width: 360px;
+            }
+        }
+    }
+}

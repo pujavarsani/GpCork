@@ -1,0 +1,39 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.btn{
+    font-family:"elza", sans-serif; 
+    padding: 28px 10px;
+    min-width: 208px;
+    font-size: $bodyXS;
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
+    line-height: 1.30;
+    border-radius: 0px; 
+    @include generate-transition(all, 0.5s, ease);
+    @include media-breakpoint-down(md) {
+        max-width: 208px;
+    }
+}
+
+.btn-primary{
+    &:hover{
+        background-color: transparent;
+        border-color: $primary;
+        color: $primary;
+    }
+}
+.btn-light{
+    color: $primary;
+    &:hover{
+        background-color: transparent;
+        border-color: $primary;
+        color: $primary;
+    }
+}
