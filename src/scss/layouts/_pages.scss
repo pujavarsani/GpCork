@@ -98,16 +98,15 @@
         opacity: 41%;
     }
     .testimonials-slider{
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 72px;
+        }
         h2{
             font-size: 40px;
         }
         p{
             letter-spacing: 1.2px;
             opacity: 41%;
-            @include media-breakpoint-down(lg) {
-                text-align: center;
-                margin-top: 50px;
-             }
         }
     }
 }

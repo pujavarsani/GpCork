@@ -192,7 +192,6 @@
             }
         }
         @include media-breakpoint-down(md) {
-            width: auto;
             li {
                 width: auto;
                 margin-bottom: 5px;

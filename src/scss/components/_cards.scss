@@ -4,11 +4,20 @@
         transform: scale(1);
         transition: 0.4s all ease-in-out;
     }
+    .point-btn{
+        transition: 0.4s all ease-in-out;
+        background-color: $primary;
+    }
     &:hover{
         img{
             transform: scale(1.1);
         }
+        .point-btn{
+            background-color: $success
+            
+        }
     }
+    
 }
 
 

@@ -1,0 +1,76 @@
+.follow-us{
+    background-image: linear-gradient($primary 50%, $success 50%);
+    padding: 60px 0px;
+    h3{
+        font-size: 28px;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+    .social-icon{
+        margin-left: 14px;
+        background-color: rgb(255 255 255 / 17%);
+        height: 48px;
+        width: 48px;
+        &:hover{
+            background-color: $success;
+            transition: 0.4s all ease-in-out;
+
+        }
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+            margin-left: 0;
+        }
+    }
+    .follow-us-slider{
+        .slick-slide{
+            padding: 6px;
+        }
+        .img{
+            width: 236px;
+            height: 240px;
+        }
+    }
+}
+
+.contact-details{
+    padding-top: 82px;
+    span{
+        font-size: 22px;
+    }
+    .icon-box{
+        width: 24px;
+    }  
+    .footer-logo{
+        margin: 0 14px;
+    }  
+}
+.bottom-footer{
+    padding-bottom: 50px;
+    ul li {
+        padding: 0 35px;
+        @include media-breakpoint-down(lg) {
+            padding-top: 20px;
+        }
+        a{
+            
+                letter-spacing: 1.2px;
+                color: rgb(255 255 255 / 30%);
+        }
+        @include media-breakpoint-down(lg) {
+            a{
+                font-size: 14px;
+                letter-spacing: 1.4px;
+                color: rgb(255 255 255 / 44%);
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        ul li:first-child {
+            padding-left: 0;
+        }
+    }
+}
