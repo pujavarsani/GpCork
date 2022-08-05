@@ -83,3 +83,31 @@
         }
     }
 }
+
+// testimonials
+
+.testimonials{
+    padding-top: 198px;
+    padding-bottom: 228px;
+    @include media-breakpoint-down(lg) {
+        padding: 145px 0px;
+     }
+    span{
+        font-size: 86px;
+        letter-spacing: 8.6px;
+        opacity: 41%;
+    }
+    .testimonials-slider{
+        h2{
+            font-size: 40px;
+        }
+        p{
+            letter-spacing: 1.2px;
+            opacity: 41%;
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+                margin-top: 50px;
+             }
+        }
+    }
+}

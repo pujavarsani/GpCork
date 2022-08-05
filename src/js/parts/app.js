@@ -69,6 +69,15 @@ export class App{
     ]
   });
 
+  $('.testimonials-slider').slick({
+    arrows:false,
+    dots: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
+  
   /* related products slider */
   $('.logos-slider').slick({
       dots: false,
